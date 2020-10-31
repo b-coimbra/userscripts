@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name           Minimal scrollbar - 2/13/2020, 7:05:30 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Global scrollbar substition
+@author         github.com/0-l
+==/UserStyle== */
+
+@-moz-document regexp(".*") {
+	::-webkit-scrollbar {
+		width: 8px;
+		background: transparent;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgba(255, 255, 255, .15);
+	}
+}

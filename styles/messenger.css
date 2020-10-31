@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name           Messenger - 12/17/2018, 7:35:32 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Dark theme for Messenger
+@author         github.com/0-l
+==/UserStyle== */
+
+@-moz-document domain("www.messenger.com") {
+    body::-webkit-scrollbar { visibility: hidden }
+
+    html, body, ._4sp8 { background: #000 !important }
+
+    ._5iwm ._58al { background-color: #252525 !important }
+
+    ._4rv6, ._2t5t, ._5iwm ._58ak::before { filter: brightness(0) invert(1) }
+
+    ._1ht6, ._17w1, ._3szq, ._1ht3 ._1htf, ._5i_d .__6k, ._364g, ._5i_d .__6l, ._5iwm ._58ak::placeholder, ._5iwm ._58al::placeholder, 
+    body, h1, h2, h3, h4, h5, h6 { color: #fff !important }
+
+    ._1ht7, ._497p, ._3eus, ._5uh, ._2v6o, ._5eu7, ._5i_d .__6m { color: rgba(255, 255, 255, 0.4) !important }
+
+    ._4sp8 { min-width: auto !important }
+
+    ._kmc { overflow: hidden !important }
+
+    ._4ldz { transition: all .25s }
+    ._4ldz:hover { transform: scale(1.25) }
+
+    @media (max-width: 370px) {
+        ._4_j5 { display: none }
+        ._4rv4 > div { display: flex }
+        ._5f0v { max-width: auto }
+    }
+}

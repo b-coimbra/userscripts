@@ -1,0 +1,293 @@
+/* ==UserStyle==
+@name           4chan - 12/17/2018, 7:35:32 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Custom styles for 4chanX
+@author         github.com/0-l
+==/UserStyle== */
+
+:root {
+    --scheme: #ff4b85;
+    --bg: #171619 url("https://i.imgur.com/ZPU7oeb.png");
+    --banner: url("https://s31.postimg.cc/v5oh960wb/1465837732047-1.gif") center; /* default banner */
+}
+
+* { text-decoration: none !important }
+
+body {
+    background: var(--bg) !important;
+    color: #ababab !important;
+    padding: 2em 0 !important;
+}
+
+::selection { background: var(--scheme) }
+
+::-webkit-scrollbar:horizontal {
+    height: 3px;
+    background: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scheme);
+    border-radius: 3px;
+}
+
+.boardBanner {
+    margin: -10px 0 0 0 !important;
+    background: var(--banner);
+    padding: 3%;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.board_wsg {
+    --banner: url("https://i.postimg.cc/0jmBD5dj/day4-by-valenberg-d84bw5s.gif") center;
+}
+
+.board_a {
+    --banner: url("https://i.postimg.cc/PJzMdCQW/tumblr-nh35p9-VBO31qze3hdo1-500.gif") center 40%;
+}
+
+.board_w {
+    --banner: url("https://i.postimg.cc/RVpHK1h3/tumblr-nm6j1gh-B7-C1qze3hdo1-500.gif") center;
+}
+
+.board_g {
+    --banner: url("https://i.postimg.cc/rwbwFQmJ/tumblr-mhyiwd-Wro-A1qze3hdo1-r1-500.gif") center;
+}
+
+div.boardTitle {
+    color: rgba(255, 255, 255, 0.7) !important;
+    box-sizing: border-box;
+    padding: 1em 0;
+    font: 600 italic 22pt 'Open-sans', sans-serif !important;
+    letter-spacing: 10px !important;
+    text-transform: uppercase;
+    text-shadow: 5px 4px 3px rgba(0, 0, 0, .3) !important;
+}
+
+.burichan_new .backlink a, .yotsuba_b_new .backlink a { color: #fff !important }
+
+div.post blockquote.postMessage {
+    font-family: "Pixel Operator", sans-serif;
+    font-size: 16px;
+}
+
+div.post div.postInfo span.postNum a,
+.backlink, #board-list a,
+.brackets-wrap,
+.navLinks,
+#shortcuts a:not(.entry),
+div.post div.postInfo span.postNum {
+    font-family: 'Terminus (TTF)'
+}
+
+div.reply {
+    background: #0f0f10 !important;
+    border: 1px solid #3a3a3a !important
+}
+
+div#boardNavDesktop a {
+    color: #e8e8e8 !important;
+}
+
+.quoteLink, .quotelink, .deadlink, .pageJump a {
+    color: #3bb59f !important;
+}
+
+#bannerCnt,
+.middlead, 
+#blotter {
+    display:none !important
+}
+
+hr { border: none !important }
+
+#togglePostFormLink > a {
+    color: red
+}
+
+.kwd { color: #b35288 !important }
+.pln { color: #d4bfbf !important }
+.prettyprint { background-color: #15151d !important }
+
+a.postMenuBtn,
+a.replylink:not(:hover), div#absbot a:not(:hover),
+div.post div.postInfo span.nameBlock span.name {
+    color: var(--scheme) !important;
+}
+
+a.replylink {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: .5px;
+}
+
+.reply:target, .reply.highlight {
+    background: #000 !important;
+    box-shadow: inset 0 0 0 1px var(--scheme);
+    border: 1px solid transparent !important;
+}
+
+div.post div.postInfo span.postNum a, a, a:visited { color: #fff !important }
+
+.burichan_new .backlink a:hover, .yotsuba_b_new .backlink a:hover { opacity: .5; color: #fff !important }
+
+.burichan_new .backlink a, .yotsuba_b_new .backlink a {
+    color: #fff !important;
+    text-decoration: none !important;
+    background: var(--scheme);
+    border-radius: 50px;
+    padding: .2em 1em;
+}
+
+a:hover { color: #757575 !important }
+
+div.sideArrows { display: none }
+
+.postInfo > input[type="checkbox"] {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    margin: 5px 5px 0 !important;
+    border-radius: 50%;
+    border: 2px solid var(--scheme);
+    outline: 0;
+}
+
+div.post div.postInfo span.postNum a:hover, .posteruid .hand:hover { color: #929292 !important; }
+
+.postInfo > input[type="checkbox"]:checked { background: var(--scheme) }
+
+div.post div.postInfo span.subject { color: #fff !important }
+
+div#absbot { color: #fff !important }
+
+div.pagelist { background: #1d1d1f !important }
+
+.post.reply {
+    margin: 1em 0 0 0;
+    padding: .4em .3em;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .3)
+}
+
+.replyContainer .post.reply .dateTime {
+    float: right;
+    font-size: 11px;
+    color: #696969;
+    margin: .5em .2em;
+    opacity: 0;
+    /*transition: all .3s;*/
+}
+
+.replyContainer .post.reply:hover .dateTime { opacity: 1; }
+
+div.post div.postInfo { margin: 0 0 1em 0; }
+
+.newPostsMarker:not(#quote-preview) { box-shadow: 0 3px var(--scheme) !important; }
+
+.dd-menu ul { background: #292929; border: none !important; }
+
+.dd-menu li { border: none !important; }
+
+.dd-menu li:hover { background: #000 !important }
+
+
+/* X-chan modifications */
+
+.qr-link {
+    border-color: rgb(25, 27, 31) rgb(25, 27, 31) rgb(10, 12, 16) !important;
+    background: linear-gradient(#37393D, #282A2E) repeat scroll 0% 0% transparent !important;
+}
+
+#header-bar.dialog { background-color: rgba(40,42,46,0.9) !important }
+
+.watch-thread-link { filter: brightness(0) invert(1) !important }
+
+.dialog { border: none !important }
+
+a.current { color: var(--scheme) !important }
+
+.shortcut { margin-left: 5px !important }
+
+table.postForm > tbody > tr > td:first-child { color: #fff !important }
+
+.dialog, .suboption-list > div:last-of-type { background-color: #363a3e !important }
+
+.entry { color: #fff !important }
+
+.catalog-hover-expand .catalog-container:hover > .post {
+    background: #2a2b33 !important;
+    border-color: #676b8a !important
+}
+
+a.entry:hover { color: #fff !important }
+
+.inline .post {
+    border: 0 !important;
+    display: table !important;
+    margin: 0 !important;
+    padding: 1px 2px !important;
+    box-shadow: inset 1px 0 0 var(--scheme), 0 5px 10px rgba(0,0,0,.3), inset 0 -1px 0 rgba(255,255,255,.1);
+    background-color: #171619 !important;
+}
+
+.inline { 
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    box-shadow: inset 2px 0 0 0 var(--scheme) !important;
+    border: none !important;
+    margin: 2px 0 0 .5em !important;
+}
+
+.sauce {
+    background: #23262d;
+    padding: .2em .5em .3em;
+    border-radius: 3px;
+    font-family: 'Terminus (TTF)';
+    box-shadow: inset 0 -1px 0 0 #4e4e4e;
+}
+
+.fa::before { font-size: 13.5px !important }
+
+#index-search {
+    background: transparent;
+    border: transparent;
+    color: #fff;
+    font-family: 'Terminus (TTF)';
+    box-shadow: inset 0 -1px #fff;
+}
+
+#index-search:focus {
+    /* border: 1px solid var(--scheme); */
+    box-shadow: inset 0 0 0 1px var(--scheme);
+    background: rgba(0, 0, 0, .5);
+}
+
+.brackets-wrap::before {
+    content: "| "
+}
+
+.brackets-wrap:nth-child(1)::before {
+    content: "";
+}
+
+.brackets-wrap::after {
+    display: none;
+}
+
+.navLinks:not(.desktop) {
+    padding: 0 6%;
+}
+
+.navLinks.desktop {
+    padding: 0 1em;
+}
+
+#thread {
+    padding: 0 1em;
+}
