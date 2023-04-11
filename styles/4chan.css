@@ -84,7 +84,7 @@ div.post div.postInfo span.postNum a,
 .navLinks,
 #shortcuts a:not(.entry),
 div.post div.postInfo span.postNum {
-    font-family: 'Terminus (TTF)'
+    font-family: 'Terminus (TTF) For Windows'
 }
 
 div.reply {
@@ -100,8 +100,13 @@ div#boardNavDesktop a {
     color: #3bb59f !important;
 }
 
+.postInfo .inline {
+    width: 100%;
+}
+
 #bannerCnt,
-.middlead, 
+.middlead,
+.globalMessage,
 #blotter {
     display:none !important
 }
@@ -183,7 +188,10 @@ div.pagelist { background: #1d1d1f !important }
     color: #696969;
     margin: .5em .2em;
     opacity: 0;
-    /*transition: all .3s;*/
+}
+
+.fileThumb img {
+    border-radius: 10px;
 }
 
 .replyContainer .post.reply:hover .dateTime { opacity: 1; }
@@ -236,9 +244,10 @@ a.entry:hover { color: #fff !important }
     padding: 1px 2px !important;
     box-shadow: inset 1px 0 0 var(--scheme), 0 5px 10px rgba(0,0,0,.3), inset 0 -1px 0 rgba(255,255,255,.1);
     background-color: #171619 !important;
+    width: 100%;
 }
 
-.inline { 
+.inline {
     background-color: rgba(255, 255, 255, 0.06) !important;
     box-shadow: inset 2px 0 0 0 var(--scheme) !important;
     border: none !important;
@@ -249,7 +258,7 @@ a.entry:hover { color: #fff !important }
     background: #23262d;
     padding: .2em .5em .3em;
     border-radius: 3px;
-    font-family: 'Terminus (TTF)';
+    font-family: 'Terminus (TTF) For Windows';
     box-shadow: inset 0 -1px 0 0 #4e4e4e;
 }
 
@@ -259,7 +268,7 @@ a.entry:hover { color: #fff !important }
     background: transparent;
     border: transparent;
     color: #fff;
-    font-family: 'Terminus (TTF)';
+    font-family: 'Terminus (TTF) For Windows';
     box-shadow: inset 0 -1px #fff;
 }
 
